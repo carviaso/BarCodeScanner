@@ -6,13 +6,17 @@
 
 
     <ContentPage.Content>
-    
         <StackLayout>
-            <Button Text="Scan" Clicked="Button_Clicked"/>
-            <Label Text="" x:Name="mycode" TextColor="Red" HorizontalOptions="Center"/>
+            <StackLayout>
+                <Button Text="Scan" Clicked="Button_Clicked"/>
+                <Label Text="" x:Name="mycode" TextColor="Red" HorizontalOptions="Center"/>
 
+            </StackLayout>
+            <StackLayout>
+                <Entry x:Name="entAndroidID" Placeholder="Android ID" ></Entry>
+                <Entry x:Name="entMacAddress" Placeholder="MacAddress ID" ></Entry>
+            </StackLayout>
         </StackLayout>
-
     </ContentPage.Content>
 
 </ContentPage>
